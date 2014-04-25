@@ -9,14 +9,14 @@
         <li><button id="rowBtn2" class="cubeGroupRow" data-cuberow="2">Row 3</button></li>
         <li><button id="rowBtn3" class="cubeGroupRow" data-cuberow="3">Row 4</button></li>
     </ul>
-</div>*@
+</div>
 <div class="contentContainer">  
-    @*<span>
+    <span>
         <button id="colBtn0" data-cubecol="0" class="btn-primary cubeGroupCol">Col 1</button>
         <button id="colBtn1" data-cubecol="1" class="btn-primary cubeGroupCol">Col 2</button>
         <button id="colBtn2" data-cubecol="2" class="btn-primary cubeGroupCol">Col 3</button>
         <button id="colBtn3" data-cubecol="3" class="btn-primary cubeGroupCol">Col 4</button>
-    </span>*@
+    </span>
     <div class="gridContainer">
         <div id="cubeGroup0" class="demo cubeGroup"></div>
         <div id="cubeGroup1" class="demo cubeGroup"></div>
@@ -29,27 +29,8 @@
         <div id="cubeGroup8" class="demo cubeGroup"></div>
         <div id="cubeGroup9" class="demo cubeGroup"></div>
     </div>
-</div>
+</div>*@
 
 <script src="~/Scripts/hexaFlip/hexaflip.js"></script>
 <script src="~/Scripts/hexaFlip/hexaUtil.js"></script>
-<script>
-
-    hexaUtil.createGrids(4);
-
-    //Page events
-    $(".cubeGroupRow").click(function () {
-        var arr = [];
-        var rowNum = $(this).data("cuberow");
-        arr.push(rowNum);
-        hexaUtil.rotateRow(arr);
-    })
-
-    $(".cubeGroupCol").click(function () {
-        hexaUtil.rotateCol($(this).data("cubecol"));
-    })
-
-
-
-
-</script>
+<script src="~/Scripts/homeIndex.js"></script>
