@@ -1,7 +1,8 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin:0 auto;
+﻿.contentContainer {
+    position: absolute;
+    width: auto;
+    left: 30%;
+    top: 15%;
 }
 
 /* Set padding to keep content from hitting the edges */

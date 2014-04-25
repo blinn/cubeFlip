@@ -101,11 +101,6 @@
             cubeGroup2.flip();
             cubeGroup3.flip();
             cubeGroup4.flip();
-            cubeGroup5.flip();
-            cubeGroup6.flip();
-            cubeGroup7.flip();
-            cubeGroup8.flip();
-            cubeGroup9.flip();
         }
         else {
             for (var x = 0; x < rowNum.length; x++) {
@@ -124,21 +119,6 @@
                         break;
                     case 4:
                         cubeGroup4.flip();
-                        break;
-                    case 5:
-                        cubeGroup5.flip();
-                        break;
-                    case 6:
-                        cubeGroup6.flip();
-                        break;
-                    case 7:
-                        cubeGroup7.flip();
-                        break;
-                    case 8:
-                        cubeGroup8.flip();
-                        break;
-                    case 9:
-                        cubeGroup9.flip();
                         break;
                 }
             }

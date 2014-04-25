@@ -2,78 +2,51 @@
     ViewBag.Title = "Home Page";
 }
 
-<link href="~/Content/hexaflip.css" rel="stylesheet" />
-<link href="~/Content/demo.css" rel="stylesheet" />
-
-<br />
-<div style="position:fixed; ">
+@*<div style="position:fixed; ">
     <ul style="list-style:none">
-        <li><button id="rowBtn0">Row 1</button></li>
-        <li><button id="rowBtn1">Row 2</button></li>
-        <li><button id="rowBtn2">Row 3</button></li>
-        <li><button id="rowBtn3">Row 4</button></li>
+        <li><button id="rowBtn0" class="cubeGroupRow" data-cuberow="[0,2]">Row 1</button></li>
+        <li><button id="rowBtn1" class="cubeGroupRow" data-cuberow="1">Row 2</button></li>
+        <li><button id="rowBtn2" class="cubeGroupRow" data-cuberow="2">Row 3</button></li>
+        <li><button id="rowBtn3" class="cubeGroupRow" data-cuberow="3">Row 4</button></li>
     </ul>
-</div>
-<div class="contentContainer">
-    
-    <span>
-        <button id="colBtn0" class="btn-primary rowBtn col0">Col 1</button>
-        <button id="colBtn1" class="btn-primary rowBtn col1">Col 2</button>
-        <button id="colBtn2" class="btn-primary rowBtn col2">Col 3</button>
-        <button id="colBtn3" class="btn-primary rowBtn col3">Col 4</button>
-    </span>
+</div>*@
+<div class="contentContainer">  
+    @*<span>
+        <button id="colBtn0" data-cubecol="0" class="btn-primary cubeGroupCol">Col 1</button>
+        <button id="colBtn1" data-cubecol="1" class="btn-primary cubeGroupCol">Col 2</button>
+        <button id="colBtn2" data-cubecol="2" class="btn-primary cubeGroupCol">Col 3</button>
+        <button id="colBtn3" data-cubecol="3" class="btn-primary cubeGroupCol">Col 4</button>
+    </span>*@
     <div class="gridContainer">
-        <div id="cubeGroup0" class="demo"></div>
-        <div id="cubeGroup1" class="demo"></div>
-        <div id="cubeGroup2" class="demo"></div>
-        <div id="cubeGroup3" class="demo"></div>
-        <div id="cubeGroup4" class="demo"></div>
-        <div id="cubeGroup5" class="demo"></div>
-        <div id="cubeGroup6" class="demo"></div>
-        <div id="cubeGroup7" class="demo"></div>
-        <div id="cubeGroup8" class="demo"></div>
-        <div id="cubeGroup9" class="demo"></div>
+        <div id="cubeGroup0" class="demo cubeGroup"></div>
+        <div id="cubeGroup1" class="demo cubeGroup"></div>
+        <div id="cubeGroup2" class="demo cubeGroup"></div>
+        <div id="cubeGroup3" class="demo cubeGroup"></div>
+        <div id="cubeGroup4" class="demo cubeGroup"></div>
+        <div id="cubeGroup5" class="demo cubeGroup"></div>
+        <div id="cubeGroup6" class="demo cubeGroup"></div>
+        <div id="cubeGroup7" class="demo cubeGroup"></div>
+        <div id="cubeGroup8" class="demo cubeGroup"></div>
+        <div id="cubeGroup9" class="demo cubeGroup"></div>
     </div>
 </div>
 
 <script src="~/Scripts/hexaFlip/hexaflip.js"></script>
 <script src="~/Scripts/hexaFlip/hexaUtil.js"></script>
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script>
 
     hexaUtil.createGrids(4);
 
     //Page events
-    $("#rowBtn0").click(function () {
-        hexaUtil.rotateRow(["0"]);
+    $(".cubeGroupRow").click(function () {
+        var arr = [];
+        var rowNum = $(this).data("cuberow");
+        arr.push(rowNum);
+        hexaUtil.rotateRow(arr);
     })
 
-    $("#rowBtn1").click(function () {
-        hexaUtil.rotateRow(["1"]);
-    })
-
-    $("#rowBtn2").click(function () {
-        hexaUtil.rotateRow(["2"]);
-    })
-
-    $("#rowBtn3").click(function () {
-        hexaUtil.rotateRow(["3"]);
-    })
-
-    $("#colBtn0").click(function () {
-        hexaUtil.rotateCol(["0"]);
-    })
-
-    $("#colBtn1").click(function () {
-        hexaUtil.rotateCol(["1"]);
-    })
-
-    $("#colBtn2").click(function () {
-        hexaUtil.rotateCol(["2"]);
-    })
-
-    $("#colBtn3").click(function () {
-        hexaUtil.rotateCol(["3"]);
+    $(".cubeGroupCol").click(function () {
+        hexaUtil.rotateCol($(this).data("cubecol"));
     })
 
 

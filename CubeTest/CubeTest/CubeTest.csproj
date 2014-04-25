@@ -176,17 +176,34 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\demo.css" />
+    <Content Include="Content\component.css" />
+    <Content Include="Content\menu.css" />
+    <Content Include="Content\hexaflip-styles.css" />
     <Content Include="Content\hexaflip.css" />
+    <Content Include="Content\normalize.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\menuIcons\menuIcons.svg" />
+    <Content Include="fonts\menuIcons\license.txt" />
+    <Content Include="fonts\ecoicons\ecoicons.dev.svg" />
+    <Content Include="fonts\ecoicons\ecoicons.svg" />
+    <Content Include="fonts\ecoicons\license.txt" />
+    <Content Include="fonts\ecoicons\Read Me.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\menuIcons\.DS_Store" />
+    <Content Include="fonts\menuIcons\menuIcons.eot" />
+    <Content Include="fonts\menuIcons\menuIcons.ttf" />
+    <Content Include="fonts\menuIcons\menuIcons.woff" />
+    <Content Include="fonts\ecoicons\ecoicons.eot" />
+    <Content Include="fonts\ecoicons\ecoicons.ttf" />
+    <Content Include="fonts\ecoicons\ecoicons.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\classie.js" />
+    <Content Include="Scripts\gnmenu.js" />
     <Content Include="Scripts\hexaFlip\hexaUtil.js" />
     <Content Include="Scripts\hexaFlip\hexaflip.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
