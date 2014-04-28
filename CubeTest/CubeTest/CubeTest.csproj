@@ -177,6 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\button-library.css" />
     <Content Include="Content\component.css" />
     <Content Include="Content\menu.css" />
     <Content Include="Content\hexaflip-styles.css" />
@@ -184,6 +185,10 @@
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\icomoon\icomoon.dev.svg" />
+    <Content Include="fonts\icomoon\icomoon.svg" />
+    <Content Include="fonts\icomoon\license.txt" />
+    <Content Include="fonts\icomoon\Read Me.txt" />
     <Content Include="fonts\menuIcons\menuIcons.svg" />
     <Content Include="fonts\menuIcons\license.txt" />
     <Content Include="fonts\ecoicons\ecoicons.dev.svg" />
@@ -201,6 +206,9 @@
     <Content Include="fonts\ecoicons\ecoicons.eot" />
     <Content Include="fonts\ecoicons\ecoicons.ttf" />
     <Content Include="fonts\ecoicons\ecoicons.woff" />
+    <Content Include="fonts\icomoon\icomoon.eot" />
+    <Content Include="fonts\icomoon\icomoon.ttf" />
+    <Content Include="fonts\icomoon\icomoon.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\gnmenu.js" />
@@ -219,6 +227,7 @@
     <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\json2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />

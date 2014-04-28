@@ -1,9 +1,27 @@
-﻿.contentContainer {
-    position: absolute;
-    width: auto;
-    left: 30%;
-    top: 15%;
+﻿@media screen and (min-width: 1081px) {
+    .contentContainer {
+        position: absolute;
+        width: auto;
+        left: 30%;
+        top: 15%;
+    }
 }
+
+@media screen and (max-width: 1080px) {
+    .contentContainer {
+        position: absolute;
+        width: auto;
+        left: 15%;
+        top: 15%;
+    }
+}
+
+.cubeGroupCol {
+    -webkit-transform: rotate(90deg);
+    margin: 15px 46px !important;
+
+}
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {

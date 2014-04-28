@@ -96,29 +96,29 @@
     },
     rotateRow: function (rowNum) {
         if (rowNum === "all") {
-            cubeGroup0.flip();
-            cubeGroup1.flip();
-            cubeGroup2.flip();
-            cubeGroup3.flip();
-            cubeGroup4.flip();
+            cubeGroup0.flipBack();
+            cubeGroup1.flipBack();
+            cubeGroup2.flipBack();
+            cubeGroup3.flipBack();
+            cubeGroup4.flipBack();
         }
         else {
             for (var x = 0; x < rowNum.length; x++) {
                 switch (Number(rowNum[x])) {
                     case 0:
-                        cubeGroup0.flip();
+                        cubeGroup0.flipBack();
                         break;
                     case 1:
-                        cubeGroup1.flip();
+                        cubeGroup1.flipBack();
                         break;
                     case 2:
-                        cubeGroup2.flip();
+                        cubeGroup2.flipBack();
                         break;
                     case 3:
-                        cubeGroup3.flip();
+                        cubeGroup3.flipBack();
                         break;
                     case 4:
-                        cubeGroup4.flip();
+                        cubeGroup4.flipBack();
                         break;
                 }
             }
@@ -126,10 +126,10 @@
     },
     rotateCol: function (colNum) {
         for (var x = 0; x < colNum.length; x++) {
-            cubeGroup0.flip(false, "letter"+colNum[x]);
-            cubeGroup1.flip(false, "letter"+colNum[x]);
-            cubeGroup2.flip(false, "letter"+colNum[x]);
-            cubeGroup3.flip(false, "letter"+colNum[x]);
+            cubeGroup0.flip(true, "letter"+colNum[x]);
+            cubeGroup1.flip(true, "letter"+colNum[x]);
+            cubeGroup2.flip(true, "letter"+colNum[x]);
+            cubeGroup3.flip(true, "letter"+colNum[x]);
         }
     }
 }
